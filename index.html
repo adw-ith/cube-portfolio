@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Cube</title>
+  </head>
+  <body>
+    <div class="cube-container">
+      <div class="cube">
+        <a class="front" id="front">
+          <div>
+            <div class="title">
+              <img
+                style="transform: rotate(-45deg)"
+                src="images/logo-white.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </a>
+        <a class="back" id="back">
+          <div>
+            <div class="title"><h2>ABOUT</h2></div>
+          </div>
+        </a>
+        <a class="top" id="top">
+          <div>
+            <div class="title"><h2>MY WORKS</h2></div>
+          </div>
+        </a>
+        <a class="bottom" id="bottom">
+          <div>
+            <div class="title"><h2>Blogs</h2></div>
+          </div>
+        </a>
+        <a class="left" id="left">
+          <div>
+            <div class="title"><h2>Contact</h2></div>
+          </div>
+        </a>
+        <a class="right" id="right">
+          <div>
+            <div class="title"><h2>Gallery</h2></div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="pop-container" id="logo-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center mains"
+        >
+          <div class="row">
+            <div class="col align-items-center">
+              <div class="title text-center">
+                <h1>Hi,</h1>
+                <h1>I am Adwaith Raj,</h1>
+                <h1>Frontend Developer</h1>
+                <h2>
+                  I <span class="alternate">design</span> and develop Websites
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <ul class="d-flex">
+              <li class="link-item"><a id="about">About</a></li>
+              <li class="link-item"><a id="work">Works</a></li>
+              <li class="link-item"><a id="blog">Blogs</a></li>
+              <li class="link-item"><a id="contact">Contact</a></li>
+              <li class="link-item"><a id="gallery">Gallery</a></li>
+              <li class="link-item">
+                <a href=""><i class="bi bi-github"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pop-container" id="about-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cards">
+            <img src="images/y.png" class="about-image" alt="" />
+            <div class="about-name"><h2>Adwaith Raj</h2></div>
+            <p class="about-position">Frontend Developer</p>
+            <div class="about-description">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat optio perspiciatis recusandae quam eos neque nulla
+                iusto. Exercitationem nihil autem distinctio recusandae beatae
+                adipisci voluptate assumenda saepe nisi id eaque esse voluptas
+                hic quae corporis, nesciunt voluptatibus officiis necessitatibus
+                harum blanditiis unde nemo. Fugiat minus magnam, nisi cupiditate
+                ullam animi ad explicabo unde reiciendis vero aliquam aperiam
+                quisquam culpa facere?
+              </p>
+            </div>
+            <ul class="socials">
+              <li class="social-item">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="social-item">
+                <a href=""><i class="bi bi-envelope-fill"></i></a>
+              </li>
+              <li class="social-item">
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="social-item">
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+              </li>
+            </ul>
+            <a href="" class="resume btn">RESUME</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pop-container" id="projects-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="container">
+          <div class="titles">
+            <h2>MY WORKS</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="works">
+                <img src="images/leaf.png" alt="" />
+                <a href="" class="desc">
+                  <h4>Work1</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pop-container" id="blogs-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="titles">
+          <h2>BLOGS</h2>
+        </div>
+        <div class="container">
+          <div class="row m-3">
+            <div class="col-sm-3">
+              <div class="blog-item">
+                <div class="blog-image">
+                  <img src="images/web.png" alt="" />
+                </div>
+                <div class="blog-info">
+                  <h5><a href="">Blog Name</a></h5>
+                  <h6>
+                    <a href=""><i class="bi bi-person"></i> Author</a>
+                  </h6>
+                  <hr />
+                  <p>5 days ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="blog-item-1">
+                    <div class="blog-image-1">
+                      <img src="images/s.avif" alt="" />
+                    </div>
+                    <div class="blog-info-1">
+                      <p>
+                        <a href=""><i class="bi bi-person"></i>Author</a>
+                      </p>
+                      <hr />
+                      <h5><a href="">BLOG NAME</a></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-item-1">
+                    <div class="blog-image-1">
+                      <img src="images/s.avif" alt="" />
+                    </div>
+                    <div class="blog-info-1">
+                      <p>
+                        <a href=""><i class="bi bi-person"></i>Author</a>
+                      </p>
+                      <hr />
+                      <h5><a href="">BLOG NAME</a></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-item-1">
+                    <div class="blog-image-1">
+                      <img src="images/s.avif" alt="" />
+                    </div>
+                    <div class="blog-info-1">
+                      <p>
+                        <a href=""><i class="bi bi-person"></i>Author</a>
+                      </p>
+                      <hr />
+                      <h5><a href="">BLOG NAME</a></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="blog-item-1">
+                    <div class="blog-image-1">
+                      <img src="images/s.avif" alt="" />
+                    </div>
+                    <div class="blog-info-1">
+                      <p>
+                        <a href=""><i class="bi bi-person"></i>Author</a>
+                      </p>
+                      <hr />
+                      <h5><a href="">BLOG NAME</a></h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pop-container" id="gallery-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="titles">
+          <h2>GALLERY</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+            <a href="images/green.jpg" target="_blank" class="col-sm-3"><img src="images/green.jpg" alt="" /></a href="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="pop-container" id="contact-container">
+      <section class="logo bg-lc">
+        <div class="navbar">
+          <div class="image">
+            <img src="images/logo.png" alt="" />
+          </div>
+          <div class="name text-center">
+            <h3 style="margin: 0">Adwaith Raj</h3>
+            <h6>Frontend Developer</h6>
+          </div>
+          <div class="close-btn">
+            <i onclick="disappear()" class="bi bi-x"></i>
+          </div>
+        </div>
+        <div class="container">
+          <div class="contact-form">
+            <div class="titles">
+              <h3>Contact Me</h3>
+            </div>
+            <form action="" class="contact-form-cont row">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Email" />
+              </div>
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Subject" />
+              </div>
+              <div class="col-sm-12">
+                <textarea
+                  class="form-control"
+                  placeholder="Enter Your Message Here..."
+                  rows="7"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- javascript -->
+
+    <script type="text/javascript" src="script/custom.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
